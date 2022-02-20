@@ -1,3 +1,5 @@
+/* https://coolors.co/cad2c5-2b061e-5daae9-354f52-ac3931 */
+
 div, h1, h2, h3, h4, input, li, p, textarea {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
@@ -9,11 +11,12 @@ li {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 285px 1fr 320px;
   grid-template-rows: 150px auto;
   grid-template-areas:
     "nav header   header"
     "nav projects sidebar";
+  height: 100vh;
 }
 
 .nav {
@@ -33,7 +36,7 @@ li {
   grid-area: projects;
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: 64px;
+  grid-template-rows: 64px auto;
   padding: 1rem;
 }
 
@@ -48,13 +51,25 @@ li {
   display: grid;
   grid-area: sidebar;
   grid-gap: 15px;
-  grid-template-rows: 64px;
   padding: 1rem;
+  border: 2px dashed black;
 
 }
 
+.announcements {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-rows: 64px;
+}
 .announcements ul{
   background-color: #FFFFFF;
+  padding: 0;
+  display: grid;
+}
+
+.announcements li {
+  height: 75px;
+  border: 1px solid black;
 }
 
 .trending {
@@ -70,6 +85,14 @@ li {
 
 .trending ul {
   background-color: #FFFFFF;
+  display: grid;
+  padding: 0;
+  border: 2px solid red;
+}
+
+.trending li {
+  border: 1px solid black;
+  height: 75px;
 }
 
 .card {
