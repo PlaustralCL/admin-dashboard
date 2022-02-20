@@ -26,8 +26,44 @@ li {
 }
 
 .header {
+  display: grid;
   grid-area: header;
+  grid-template-columns: 2fr 1fr;
   padding: 1rem;
+}
+
+.search input {
+  width: 75%;
+}
+
+.status {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.greeting {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.greeting p {
+  margin: 2px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.button {
+  width: 100px;
+  padding: 5px 10px;
+  background-color: #354F52;
+  color: #FFFFFF;
+  border-radius: 15px;
+  font-size: 1.2rem;
 }
 
 .projects {
