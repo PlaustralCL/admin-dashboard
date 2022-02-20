@@ -11,24 +11,24 @@ li {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 285px 1fr 320px;
+  grid-template-columns: 285px 1fr;
   grid-template-rows: 150px auto;
   grid-template-areas:
-    "nav header   header"
-    "nav projects sidebar";
+    "sidebar header"
+    "sidebar main";
   height: 100vh;
 }
 
-.nav {
-  grid-area: nav;
+.sidebar {
+  grid-area: sidebar;
   background-color: #354F52;
   color: #FFFFFF;
 }
 
-.nav-header {
+.sidebar-header {
   font-size: 1.8rem;
 }
-.nav-item {
+.sidebar-item {
   font-size: 1.3rem;
 }
 
@@ -73,6 +73,17 @@ li {
   font-size: 1.2rem;
 }
 
+.main {
+  background-color: #CAD3C5;
+  display: grid;
+  grid-area: main;
+  grid-gap: 15px;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  grid-template-columns: 1fr 285px;
+  padding: 1rem;
+}
 .projects {
   background-color: #CAD3C5;
   display: grid;
@@ -83,32 +94,24 @@ li {
   padding: 1rem;
 }
 
-.project-header,
-.announcement-header {
+.project-header {
   grid-column: 1 / -1;
-  grid-row: 1/ 2;
+  grid-row: 1 / 2;
   font-size: 1.4rem;
-}
-
-.sidebar {
-  background-color: #CAD3C5;
-  display: grid;
-  grid-area: sidebar;
-  grid-gap: 15px;
-  padding: 1rem;
-  border: 2px dashed black;
-
 }
 
 .announcements {
   display: grid;
   grid-gap: 15px;
   grid-template-rows: 64px;
+  grid-area: announcements;
 }
+
 .announcements ul{
   background-color: #FFFFFF;
-  padding: 0;
   display: grid;
+  font-size: 1.4rem;
+  padding: 0;
 }
 
 .announcements li {
@@ -121,10 +124,12 @@ li {
   display: grid;
   grid-gap: 15px;
   grid-template-rows: 64px;
+  grid-area: trending;
 }
 
+.announcement-header,
 .trending-header {
-  background-color: #CAD3C5;
+  font-size: 1.4rem;
 }
 
 .trending ul {
