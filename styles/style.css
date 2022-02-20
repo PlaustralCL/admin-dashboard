@@ -25,6 +25,13 @@ li {
   color: #FFFFFF;
 }
 
+.nav-header {
+  font-size: 1.8rem;
+}
+.nav-item {
+  font-size: 1.3rem;
+}
+
 .header {
   display: grid;
   grid-area: header;
@@ -80,6 +87,7 @@ li {
 .announcement-header {
   grid-column: 1 / -1;
   grid-row: 1/ 2;
+  font-size: 1.4rem;
 }
 
 .sidebar {
