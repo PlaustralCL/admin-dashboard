@@ -84,7 +84,7 @@ li {
   grid-template-columns: 1fr 285px;
   grid-template-rows: repeat(2, calc((100vh - 150px) / 2));
   /* grid-template-rows: 300px 300px; */
-  padding: 0 1rem;
+  padding: 0 32px;
 }
 
 .projects {
@@ -134,19 +134,27 @@ li {
 }
 
 .announcement-text {
-  text-overflow: ellipsis;
   font-size: 0.8rem;
   margin: 0;
   max-height: 40px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .trending {
   background-color: #CAD3C5;
   display: grid;
-  /* grid-gap: 15px; */
-  grid-template-rows: 32px;
   grid-area: trending;
+  grid-gap: 8px;
+  grid-template-rows: 32px;
+}
+
+.trending p {
+  margin: 0;
+}
+
+.trending-subtitle {
+  font-size: 0.8rem;
 }
 
 .project-header,
@@ -155,6 +163,10 @@ li {
   font-size: 1.4rem;
   font-weight: bold;
   margin: 0;
+}
+
+.project-header {
+  margin-top: 16px;
 }
 
 .trending ul {
@@ -170,6 +182,8 @@ li {
 .trending li {
   height: 50px;
   align-self: center;
+  display: grid;
+  grid-template-columns: 50px 1fr;
 }
 
 .card {
