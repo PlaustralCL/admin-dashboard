@@ -144,8 +144,8 @@ li {
 .trending {
   background-color: #CAD3C5;
   display: grid;
-  grid-gap: 15px;
-  grid-template-rows: 64px;
+  /* grid-gap: 15px; */
+  grid-template-rows: 32px;
   grid-area: trending;
 }
 
@@ -159,14 +159,17 @@ li {
 
 .trending ul {
   background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 6px 9px 8px 1px #949494;
   display: grid;
-  padding: 0;
-  border: 2px solid red;
+  margin: 0;
+  max-height: 300px;
+  padding: 5px 1rem;
 }
 
 .trending li {
-  border: 1px solid black;
-  height: 75px;
+  height: 50px;
+  align-self: center;
 }
 
 .card {
