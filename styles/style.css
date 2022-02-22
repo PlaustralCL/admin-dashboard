@@ -66,6 +66,38 @@ li {
   justify-items: center;
 }
 
+.avatar-background {
+  background-color: yellow;
+  border-radius: 50%;
+  border: 5px solid yellow;
+  display: inline;
+  height: 50px;
+  position: relative;
+  width: 50px;
+}
+
+.avatar-picture {
+  position: absolute;
+  top: 8px;
+  width: 40px;
+}
+
+.avatar-background--large {
+  background-color: yellow;
+  border-radius: 50%;
+  border: 5px solid yellow;
+  display: inline;
+  height: 60px;
+  position: relative;
+  width: 60px;
+}
+
+.avatar-picture--large {
+  position: absolute;
+  top: 8px;
+  width: 50px;
+}
+
 .greeting {
   align-items: center;
   display: grid;
@@ -73,7 +105,7 @@ li {
 }
 
 .greeting p {
-  margin: 0;
+  margin: 0 1rem;
 }
 
 .greeting img {
