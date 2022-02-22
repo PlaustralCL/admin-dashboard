@@ -33,6 +33,15 @@ li {
   font-size: 1.3rem;
 }
 
+.sidebar-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
+}
+
 .header {
   display: grid;
   grid-area: header;
