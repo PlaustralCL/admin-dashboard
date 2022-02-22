@@ -78,6 +78,11 @@ li {
 
 .avatar-picture {
   position: absolute;
+  width: 40px;
+}
+
+.avatar-picture--turtle {
+  position: absolute;
   top: 8px;
   width: 40px;
 }
@@ -90,6 +95,34 @@ li {
   height: 60px;
   position: relative;
   width: 60px;
+}
+
+.avatar-background--ball {
+  background-color: lightgreen;
+  border: 5px solid lightgreen;
+  border-radius: 50%;
+  position:relative;
+}
+
+.avatar-background--rose {
+  background-color: lightblue;
+  border: 5px solid lightblue;
+  border-radius: 50%;
+  position:relative;
+}
+
+.avatar-background--tiger {
+  background-color: lightseagreen;
+  border: 5px solid lightseagreen;
+  border-radius: 50%;
+  position:relative;
+}
+
+.avatar-background--tree {
+  background-color: lightpink;
+  border: 5px solid lightpink;
+  border-radius: 50%;
+  position:relative;
 }
 
 .avatar-picture--large {
