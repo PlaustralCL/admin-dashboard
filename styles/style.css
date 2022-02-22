@@ -1,4 +1,5 @@
 /* https://coolors.co/cad2c5-2b061e-5daae9-354f52-ac3931 */
+/* https://pixabay.com/users/openclipart-vectors-30363/ */
 
 div, h1, h2, h3, h4, input, li, p, textarea {
   font-family: 'Roboto', sans-serif;
@@ -153,6 +154,7 @@ li {
   font-size: 1.4rem;
   margin: 0;
   padding: 0;
+  padding-top: 1rem;
 }
 
 .announcement-list li {
@@ -225,15 +227,30 @@ li {
   border-radius: 8px;
   box-shadow: 6px 9px 8px 1px #949494;
   padding: 1rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .card-text {
+  align-self: start;
   font-size: 1rem;
+  margin: 0;
 }
 
 .card-title {
+  align-self: end;
   font-size: 1.2rem;
   font-weight: bold;
+  margin: 0;
+}
+
+.card-icon-group {
+  align-self: end;
+  text-align: right;
+}
+
+.card-icon-middle {
+  margin: 0 1rem;
 }
 
 .vertical-sub {
