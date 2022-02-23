@@ -20,6 +20,7 @@ li {
   height: 100vh;
 }
 
+
 @media (max-width: 1200px) {
   .grid-container {
     grid-template-columns: 240px 1fr;
@@ -174,6 +175,12 @@ li {
   font-weight: bold;
 }
 
+@media (max-width: 1200px) {
+  .greeting-name{
+    font-size: 1.2rem;
+  }
+}
+
 .actions {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -189,6 +196,15 @@ li {
   font-size: 1.2rem;
   padding: 8px 10px;
   width: 100px;
+}
+
+@media (max-width: 1200px) {
+  .button {
+  font-size: 1rem;
+  padding: 8px 5px;
+  width: 75px;
+  margin-right: 4px;
+  }
 }
 
 .button:hover {
