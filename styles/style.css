@@ -20,6 +20,12 @@ li {
   height: 100vh;
 }
 
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 240px 1fr;
+  }
+}
+
 .sidebar {
   grid-area: sidebar;
   background-color: #354F52;
@@ -46,7 +52,8 @@ li {
   display: grid;
   grid-area: header;
   grid-template-columns: 2fr 1fr;
-  padding: 0 2rem;
+  grid-template-rows: 1fr 2fr;
+  padding: 1rem 2rem;
 }
 
 .search {
@@ -73,6 +80,10 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+}
+
+.status p {
+  margin: 0;
 }
 
 .avatar-background {
