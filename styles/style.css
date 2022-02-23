@@ -37,7 +37,6 @@ li {
   margin-bottom: 2rem;
 }
 
-
 .sidebar-item {
   font-size: 1.3rem;
   margin: 1rem 0;
@@ -53,6 +52,7 @@ li {
 }
 
 .header {
+  border-bottom: 4px solid #b7bcb1;
   display: grid;
   grid-area: header;
   grid-template-columns: 2fr 1fr;
