@@ -316,6 +316,10 @@ li {
   grid-template-rows: repeat(3, 1fr);
 }
 
+.card:hover {
+  box-shadow: 6px 9px 8px 1px #AC3931;
+}
+
 .card-text {
   align-self: start;
   font-size: 1rem;
